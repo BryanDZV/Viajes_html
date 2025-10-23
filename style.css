@@ -118,22 +118,7 @@
         }
 
         /* --- Cuadrícula de Imágenes --- */
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
-            gap: 25px;
-            width: 95%;
-            margin: 0 auto;
-        }
-
-        .image-grid img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            border: 6px solid var(--color-texto-claro);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-        }
-
+  
         /* --- Pie de Página --- */
         .footer {
             background-color: var(--color-principal);
