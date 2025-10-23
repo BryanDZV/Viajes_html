@@ -1,5 +1,4 @@
-
-        body {
+body {
             font-family: Arial, Helvetica, sans-serif;
             background-image: url("/fondos_para_web/amarillo.jpg") ; /* Fondo principal amarillo */
         }
@@ -31,7 +30,7 @@
         }
 
         .logo .icon {
-           
+            
             color: var(--color-principal);
             padding: 5px 10px;
             border-radius: 8px;
@@ -43,6 +42,7 @@
         .search-form {
             display: flex;
             flex-direction: column;
+            align-items: center; /* Propiedad fusionada de la declaración duplicada */
         }
 
         .trip-options {
@@ -107,10 +107,10 @@
         /* --- Contenido Principal --- */
         .main-content {
             position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            align-items: center;
         }
 
         .main-content h2 {
@@ -130,7 +130,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-      
+    
             margin-top: 30px;
         }
 
@@ -150,160 +150,91 @@
             font-size: 0.9em;
         }
 
-/*****************************************/
- 
-    
-
-
-
-
-     
-
-      .contact-container {
-        display: grid;
-        grid-template-columns: 2fr 1fr; /* Formulario más ancho que la info */
-        gap: 30px;
-        background-color: var(--color-texto-claro);
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-        width: 95%;
-        margin: 0 auto;
-      }
-
-      .contact-form-section h3,
-      .contact-info-section h3 {
-        color: var(--color-principal);
-        font-size: 1.5em;
-        margin-bottom: 20px;
-        border-bottom: 2px solid var(--color-acento);
-        padding-bottom: 10px;
-      }
-
-      .form-group {
-        margin-bottom: 20px;
-      }
-
-      .form-group label {
-        display: block;
-        margin-bottom: 8px;
-        font-weight: bold;
-        color: #333;
-      }
-
-      .form-group input,
-      .form-group textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 1em;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      .form-group textarea {
-        resize: vertical;
-        min-height: 150px;
-      }
-
-      button.submit-btn {
-        background-color: var(--color-principal);
-        color: var(--color-texto-claro);
-        padding: 15px 30px;
-        border: none;
-        border-radius: 5px;
-        font-size: 1em;
-        font-weight: bold;
-        text-transform: uppercase;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
-
-      button.submit-btn:hover {
-        background-color: #8a4fe8; /* Morado más claro */
-      }
-
-      .contact-info-section p {
-        font-size: 1.1em;
-        color: #333;
-        margin-bottom: 20px;
-        display: flex;
-        align-items: center;
-      }
-
-      .contact-info-section p span.icon {
-        font-size: 1.5em;
-        margin-right: 15px;
-        color: var(--color-principal);
-      }
-
-    
-/**************************************************************/
-  
-       
-
-        .search-form {
-          display: flex;
-    flex-direction: column;
-    align-items: center;
-        }
-
-        .trip-options {
-            display: flex;
-        }
-
-        .trip-options a {
-            padding: 10px 20px;
-            background-color: #8a4fe8;
-            color: var(--color-texto-claro);
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 0.9em;
-            border-radius: 10px 10px 0 0;
-            margin: 0 2px;
-            text-transform: uppercase;
-        }
-
-        .trip-options a.active {
+      /*contacto*/
+        .contact-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr; /* Formulario más ancho que la info */
+            gap: 30px;
             background-color: var(--color-texto-claro);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .contact-form-section h3,
+        .contact-info-section h3 {
             color: var(--color-principal);
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--color-acento);
+            padding-bottom: 10px;
         }
 
-        .inputs {
-            background-color: var(--color-texto-claro);
-            padding: 15px;
-            display: flex;
-            border-radius: 0 10px 10px 10px;
+        .form-group {
+            margin-bottom: 20px;
         }
 
-        .inputs input[type="text"] {
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
             padding: 12px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            margin-right: 10px;
-            font-size: 0.9em;
-        }
-        
-        .inputs input::placeholder {
-            text-transform: uppercase;
-            color: #888;
-        }
-
-
-        .login a {
-            color: var(--color-texto-claro);
-            text-decoration: none;
-            font-weight: bold;
             font-size: 1em;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        
-       
-      .destination-content{
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        button.submit-btn {
+            background-color: var(--color-principal);
+            color: var(--color-texto-claro);
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button.submit-btn:hover {
+            background-color: #8a4fe8; /* Morado más claro */
+        }
+
+        .contact-info-section p {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info-section p span.icon {
+            font-size: 1.5em;
+            margin-right: 15px;
+            color: var(--color-principal);
+        }
+
+    
+        .destination-content{
             gap: 5rem;
-    display: flex;
-    flex-direction: column;
-      }
+            display: flex;
+            flex-direction: column;
+        }
         .destination-card {
             background-color: var(--color-texto-claro);
             border-radius: 10px;
@@ -328,7 +259,7 @@
             padding: 20px;
             display: flex;
             flex-direction: column;
-           
+            
         }
 
         .destination-card-content h3 {
@@ -361,7 +292,7 @@
             background-color: #8a4fe8; /* Morado más claro */
         }
 
-       
+        
         /* --- Responsividad --- */
         @media (max-width: 900px) {
             .header {
@@ -385,4 +316,3 @@
                 text-align: center;
             }
         }
-
