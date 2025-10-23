@@ -1,7 +1,7 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #fecd00; /* Fondo principal amarillo */
+            background-image: url("/fondos_para_web/amarillo.jpg") ; /* Fondo principal amarillo */
         }
 
         /* --- Colores --- */
@@ -20,7 +20,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 10px solid var(--color-acento);
+            
         }
 
         .logo {
@@ -31,7 +31,7 @@
         }
 
         .logo .icon {
-            background-color: var(--color-acento);
+           
             color: var(--color-principal);
             padding: 5px 10px;
             border-radius: 8px;
@@ -106,7 +106,11 @@
 
         /* --- Contenido Principal --- */
         .main-content {
-            padding: 30px 5%; /* Damos padding lateral para centrar el contenido */
+            position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
         }
 
         .main-content h2 {
@@ -117,8 +121,7 @@
             margin-left: 2.5%; /* Alineamos con la cuadrícula */
         }
 
-        /* --- Cuadrícula de Imágenes --- */
-  
+
         /* --- Pie de Página --- */
         .footer {
             background-color: var(--color-principal);
@@ -127,7 +130,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-top: 10px solid var(--color-acento);
+      
             margin-top: 30px;
         }
 
@@ -151,35 +154,10 @@
  
     
 
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: #fecd00; /* Fondo principal amarillo */
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh; /* Asegura que el footer se pegue abajo */
-      }
-
-      /* --- Colores --- */
-      :root {
-        --color-principal: #5d00a7; /* Morado */
-        --color-acento: #fecd00; /* Amarillo */
-        --color-texto-claro: #ffffff;
-        --color-texto-oscuro: #000000;
-      }
 
 
-      /* --- Contenido Principal (NUEVO) --- */
-      .main-content {
-        padding: 30px 5%;
-        flex-grow: 1; /* Hace que el contenido principal crezca para llenar el espacio */
-      }
 
-      .main-content h2 {
-        color: var(--color-texto-oscuro);
-        font-size: 2em;
-        margin-bottom: 20px;
-        text-align: center;
-      }
+     
 
       .contact-container {
         display: grid;
@@ -259,98 +237,15 @@
         color: var(--color-principal);
       }
 
-      .map-placeholder {
-        width: 100%;
-        height: 250px;
-        background-color: #f0f0f0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #888;
-        font-style: italic;
-        margin-top: 20px;
-      }
-
-
-      /* --- Responsividad --- */
-      @media (max-width: 900px) {
-        .header {
-          flex-direction: column;
-          gap: 20px;
-        }
-      }
-
-      @media (max-width: 600px) {
-        .inputs {
-          flex-direction: column;
-          gap: 10px;
-        }
-
-        .footer {
-          flex-direction: column;
-          gap: 15px;
-          text-align: center;
-        }
-        .footer-links {
-          text-align: center;
-        }
-      }
+    
 /**************************************************************/
-        /* --- Configuración Global --- */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #fecd00; /* Fondo principal amarillo */
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        /* --- Colores --- */
-        :root {
-            --color-principal: #5d00a7; /* Morado */
-            --color-acento: #fecd00;    /* Amarillo */
-            --color-texto-claro: #ffffff;
-            --color-texto-oscuro: #000000;
-        }
-
-        /* --- Encabezado (IDÉNTICO AL ANTERIOR) --- */
-        .header {
-            background-color: var(--color-principal);
-            color: var(--color-texto-claro);
-            padding: 20px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 10px solid var(--color-acento);
-        }
-
-        .logo {
-            font-size: 2.5em;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-        }
-
-        .logo .icon {
-            background-color: var(--color-acento);
-            color: var(--color-principal);
-            padding: 5px 10px;
-            border-radius: 8px;
-            margin-right: 10px;
-            font-size: 0.8em;
-        }
+  
+       
 
         .search-form {
-            display: flex;
-            flex-direction: column;
+          display: flex;
+    flex-direction: column;
+    align-items: center;
         }
 
         .trip-options {
@@ -394,15 +289,6 @@
             color: #888;
         }
 
-        .calendar-icon {
-            background-color: var(--color-texto-claro);
-            border: 1px solid #ccc;
-            padding: 10px 12px;
-            border-radius: 5px;
-            font-size: 1.2em;
-            color: var(--color-principal);
-            cursor: pointer;
-        }
 
         .login a {
             color: var(--color-texto-claro);
@@ -411,45 +297,25 @@
             font-size: 1em;
         }
 
-        /* --- Contenido Principal (NUEVO) --- */
-        .main-content {
-            padding: 30px 5%;
-            flex-grow: 1; /* Crece para llenar el espacio */
-        }
-
-        .main-content h2 {
-            color: var(--color-texto-oscuro);
-            font-size: 2em;
-            margin-bottom: 25px;
-            text-align: center;
-            text-transform: uppercase;
-        }
-
-        .destination-grid {
-            display: grid;
-            /* Crea columnas responsivas:
-               - auto-fit: crea tantas columnas como quepan
-               - minmax(300px, 1fr): cada columna mide mínimo 300px y máximo 1 fracción (se reparten el espacio)
-            */
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            width: 95%;
-            margin: 0 auto;
-        }
-
+        
+       
+      .destination-content{
+            gap: 5rem;
+    display: flex;
+    flex-direction: column;
+      }
         .destination-card {
             background-color: var(--color-texto-claro);
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
             overflow: hidden; /* Para que la imagen no se salga de los bordes redondeados */
             display: flex;
             flex-direction: column;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            
         }
 
         .destination-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            
         }
 
         .destination-card img {
@@ -462,7 +328,7 @@
             padding: 20px;
             display: flex;
             flex-direction: column;
-            flex-grow: 1; /* Para que el contenido ocupe el espacio y el botón se alinee abajo */
+           
         }
 
         .destination-card-content h3 {
@@ -495,34 +361,7 @@
             background-color: #8a4fe8; /* Morado más claro */
         }
 
-        /* --- Pie de Página (IDÉNTICO AL ANTERIOR) --- */
-        .footer {
-            background-color: var(--color-principal);
-            color: var(--color-texto-claro);
-            padding: 20px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-top: 10px solid var(--color-acento);
-            margin-top: 30px; /* Separación del contenido */
-        }
-
-        .footer .logo {
-            font-size: 1.8em;
-        }
-
-        .footer-links {
-            text-align: right;
-        }
-
-        .footer-links a {
-            display: block;
-            color: var(--color-texto-claro);
-            text-decoration: none;
-            margin-bottom: 5px;
-            font-size: 0.9em;
-        }
-
+       
         /* --- Responsividad --- */
         @media (max-width: 900px) {
             .header {
